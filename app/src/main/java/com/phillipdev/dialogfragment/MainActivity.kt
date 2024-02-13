@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
+import androidx.fragment.app.FragmentManager
 
 class MainActivity : AppCompatActivity() {
     lateinit var btnViewDialog : Button
@@ -18,11 +19,15 @@ class MainActivity : AppCompatActivity() {
         age = findViewById(R.id.textViewAge)
 
         btnViewDialog.setOnClickListener {
+            val fragmentManager : FragmentManager = supportFragmentManager
+            val dialogFragment = DialogFragment()
 
+            dialogFragment.show(fragmentManager,"MyDialogFragment")
         }
     }
 
-    fun getUserData(name: String ,age: Int ){
-
+    fun getUserData(userName: String ,userAge: Int ){
+            name.text = "Name: $userName"
+            age.text = "Age: $userAge"
     }
 }
