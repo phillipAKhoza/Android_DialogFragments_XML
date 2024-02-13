@@ -7,8 +7,9 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.EditText
+import androidx.fragment.app.DialogFragment
 
-class DialogFragment : Fragment() {
+class DialogFragment : DialogFragment() {
 
     lateinit var name : EditText
     lateinit var age: EditText
