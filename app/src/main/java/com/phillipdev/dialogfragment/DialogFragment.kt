@@ -28,7 +28,13 @@ class DialogFragment : DialogFragment() {
         ok = view.findViewById(R.id.btnOk)
 
         ok.setOnClickListener {
+            val userName: String = name.text.toString()
+            val userAge: Int = age.text.toString().toInt()
 
+            val mainActivity : MainActivity = activity as MainActivity
+
+            mainActivity.getUserData(userName, userAge)
+            dialog!!.dismiss()
         }
         cancel.setOnClickListener {
             dialog!!.dismiss()
