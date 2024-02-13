@@ -31,7 +31,7 @@ class DialogFragment : DialogFragment() {
 
         }
         cancel.setOnClickListener {
-
+            dialog!!.dismiss()
         }
         // Inflate the layout for this fragment
         return view
