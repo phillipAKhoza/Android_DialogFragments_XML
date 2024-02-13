@@ -25,7 +25,7 @@ class DialogFragment : DialogFragment() {
         age = view.findViewById(R.id.editAge)
         cancel = view.findViewById(R.id.btnCancel)
         ok = view.findViewById(R.id.btnOk)
-
+        dialog!!.window!!.setBackgroundDrawableResource(android.R.color.transparent)
         ok.setOnClickListener {
             val userName: String = name.text.toString()
             val userAge: Int = age.text.toString().toInt()
