@@ -21,4 +21,8 @@ class MainActivity : AppCompatActivity() {
 
         }
     }
+
+    fun getUserData(name: String ,age: Int ){
+
+    }
 }
