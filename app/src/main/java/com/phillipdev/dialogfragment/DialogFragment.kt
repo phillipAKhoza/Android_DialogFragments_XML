@@ -26,6 +26,12 @@ class DialogFragment : Fragment() {
         cancel = view.findViewById(R.id.btnCancel)
         ok = view.findViewById(R.id.btnOk)
 
+        ok.setOnClickListener {
+
+        }
+        cancel.setOnClickListener {
+
+        }
         // Inflate the layout for this fragment
         return view
     }
